@@ -48,20 +48,27 @@
 alert('Привіт! Пограємо в гру "Вгадай число", я загадую - ти вгадуєш. Почнемо! Я вже загадав!')
 let myNomber = 13;
 let lim = 5;
-let anyNomber;
+let anyNomber = [];
+
+
 for (i = 0; i < 5; i++) {
     anyNomber = prompt("Ваше число")
     if (myNomber < anyNomber) {
         alert('за велике число')  // треба поставити BREAK (брейк)
+        
     }
     else if (myNomber > anyNomber) {
         alert('число за мале')
+        
     }
     else if (myNomber == anyNomber) {
         alert('вгадав')
+        // anyNomber.sort((a, b) => a - b);
+        break
     }
     else {
         alert("Щось ти не те ввів, спрбуєш ще раз")
-        // return prompt(anyNomber)
+        
     }
+    console.log();
 }
