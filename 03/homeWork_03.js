@@ -36,12 +36,9 @@
 // console.log(getNumber());
 
 // #4
-let a = [];
-function getNumber(a) {
-    
-    for (let i = 1; i <= 100; i++) {
-        if (i % 2 == 0)
-            console.log(i);
-    }
-}
-console.log(getNumber(a));
+
+let arr = [20, 32, 33, 44, 55, 66, 77];
+let filterArr = arr.filter(function (item) {
+    return item % 2 !== 0;
+}) 
+console.log(filterArr);
